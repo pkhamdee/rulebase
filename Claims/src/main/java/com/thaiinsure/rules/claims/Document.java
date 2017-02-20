@@ -12,7 +12,7 @@ public class Document implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. prescription or bill")
    private java.lang.String documentType;
    private java.util.Date createDate;
-   private java.lang.String physician;
+   private java.lang.String physicianName;
 
    public Document()
    {
@@ -38,22 +38,22 @@ public class Document implements java.io.Serializable
       this.createDate = createDate;
    }
 
-   public java.lang.String getPhysician()
+   public java.lang.String getPhysicianName()
    {
-      return this.physician;
+      return this.physicianName;
    }
 
-   public void setPhysician(java.lang.String physician)
+   public void setPhysicianName(java.lang.String physicianName)
    {
-      this.physician = physician;
+      this.physicianName = physicianName;
    }
 
    public Document(java.lang.String documentType, java.util.Date createDate,
-         java.lang.String physician)
+         java.lang.String physicianName)
    {
       this.documentType = documentType;
       this.createDate = createDate;
-      this.physician = physician;
+      this.physicianName = physicianName;
    }
 
 }
