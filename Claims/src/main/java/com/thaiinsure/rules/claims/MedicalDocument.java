@@ -17,6 +17,8 @@ public class MedicalDocument implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. generalPractitioner,  internish, otologist, dentist, cardiologist")
    private java.lang.String physicianCategory;
 
+   private java.lang.Integer medicalFee;
+
    public MedicalDocument()
    {
    }
@@ -61,14 +63,25 @@ public class MedicalDocument implements java.io.Serializable
       this.physicianCategory = physicianCategory;
    }
 
+   public java.lang.Integer getMedicalFee()
+   {
+      return this.medicalFee;
+   }
+
+   public void setMedicalFee(java.lang.Integer medicalFee)
+   {
+      this.medicalFee = medicalFee;
+   }
+
    public MedicalDocument(java.lang.String documentType,
          java.util.Date createDate, java.lang.String physicianName,
-         java.lang.String physicianCategory)
+         java.lang.String physicianCategory, java.lang.Integer medicalFee)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.physicianName = physicianName;
       this.physicianCategory = physicianCategory;
+      this.medicalFee = medicalFee;
    }
 
 }
