@@ -14,6 +14,11 @@ public class Claim implements java.io.Serializable
 
    private java.lang.Integer claimApproveAmount;
 
+   @org.kie.api.definition.type.Description(value = "e.g. approved, rejected")
+   private java.lang.String claimStatus;
+
+   private java.lang.String claimStatusReason;
+
    public Claim()
    {
    }
@@ -48,12 +53,35 @@ public class Claim implements java.io.Serializable
       this.claimApproveAmount = claimApproveAmount;
    }
 
+   public java.lang.String getClaimStatus()
+   {
+      return this.claimStatus;
+   }
+
+   public void setClaimStatus(java.lang.String claimStatus)
+   {
+      this.claimStatus = claimStatus;
+   }
+
+   public java.lang.String getClaimStatusReason()
+   {
+      return this.claimStatusReason;
+   }
+
+   public void setClaimStatusReason(java.lang.String claimStatusReason)
+   {
+      this.claimStatusReason = claimStatusReason;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
-         java.lang.Integer claimApproveAmount)
+         java.lang.Integer claimApproveAmount, java.lang.String claimStatus,
+         java.lang.String claimStatusReason)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
       this.claimApproveAmount = claimApproveAmount;
+      this.claimStatus = claimStatus;
+      this.claimStatusReason = claimStatusReason;
    }
 
 }
