@@ -11,9 +11,9 @@ public class Policy implements java.io.Serializable
 
    private java.lang.String policyId;
    private java.lang.String policyName;
-   private java.util.Date endDate;
-
    private java.util.Date effectiveDate;
+
+   private java.util.Date expireDate;
 
    public Policy()
    {
@@ -39,16 +39,6 @@ public class Policy implements java.io.Serializable
       this.policyName = policyName;
    }
 
-   public java.util.Date getEndDate()
-   {
-      return this.endDate;
-   }
-
-   public void setEndDate(java.util.Date endDate)
-   {
-      this.endDate = endDate;
-   }
-
    public java.util.Date getEffectiveDate()
    {
       return this.effectiveDate;
@@ -59,13 +49,23 @@ public class Policy implements java.io.Serializable
       this.effectiveDate = effectiveDate;
    }
 
+   public java.util.Date getExpireDate()
+   {
+      return this.expireDate;
+   }
+
+   public void setExpireDate(java.util.Date expireDate)
+   {
+      this.expireDate = expireDate;
+   }
+
    public Policy(java.lang.String policyId, java.lang.String policyName,
-         java.util.Date endDate, java.util.Date effectiveDate)
+         java.util.Date effectiveDate, java.util.Date expireDate)
    {
       this.policyId = policyId;
       this.policyName = policyName;
-      this.endDate = endDate;
       this.effectiveDate = effectiveDate;
+      this.expireDate = expireDate;
    }
 
 }
