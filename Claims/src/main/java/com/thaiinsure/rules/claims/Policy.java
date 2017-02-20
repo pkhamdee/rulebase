@@ -15,6 +15,18 @@ public class Policy implements java.io.Serializable
 
    private java.util.Date expireDate;
 
+   private java.lang.Integer RBN_PER_DAY;
+
+   private java.lang.Integer HOS_EXP;
+
+   private java.lang.Integer SURGERY_N;
+
+   private java.lang.Integer DOCTER_FEE;
+
+   private java.lang.Integer ER;
+
+   private java.lang.Integer OPD_PER_DAY_30_PER_YEAR;
+
    public Policy()
    {
    }
@@ -59,13 +71,82 @@ public class Policy implements java.io.Serializable
       this.expireDate = expireDate;
    }
 
+   public java.lang.Integer getRBN_PER_DAY()
+   {
+      return this.RBN_PER_DAY;
+   }
+
+   public void setRBN_PER_DAY(java.lang.Integer RBN_PER_DAY)
+   {
+      this.RBN_PER_DAY = RBN_PER_DAY;
+   }
+
+   public java.lang.Integer getHOS_EXP()
+   {
+      return this.HOS_EXP;
+   }
+
+   public void setHOS_EXP(java.lang.Integer HOS_EXP)
+   {
+      this.HOS_EXP = HOS_EXP;
+   }
+
+   public java.lang.Integer getSURGERY_N()
+   {
+      return this.SURGERY_N;
+   }
+
+   public void setSURGERY_N(java.lang.Integer SURGERY_N)
+   {
+      this.SURGERY_N = SURGERY_N;
+   }
+
+   public java.lang.Integer getDOCTER_FEE()
+   {
+      return this.DOCTER_FEE;
+   }
+
+   public void setDOCTER_FEE(java.lang.Integer DOCTER_FEE)
+   {
+      this.DOCTER_FEE = DOCTER_FEE;
+   }
+
+   public java.lang.Integer getER()
+   {
+      return this.ER;
+   }
+
+   public void setER(java.lang.Integer ER)
+   {
+      this.ER = ER;
+   }
+
+   public java.lang.Integer getOPD_PER_DAY_30_PER_YEAR()
+   {
+      return this.OPD_PER_DAY_30_PER_YEAR;
+   }
+
+   public void setOPD_PER_DAY_30_PER_YEAR(java.lang.Integer OPD_PER_DAY_30_PER_YEAR)
+   {
+      this.OPD_PER_DAY_30_PER_YEAR = OPD_PER_DAY_30_PER_YEAR;
+   }
+
    public Policy(java.lang.String policyId, java.lang.String policyName,
-         java.util.Date effectiveDate, java.util.Date expireDate)
+         java.util.Date effectiveDate, java.util.Date expireDate,
+         java.lang.Integer RBN_PER_DAY, java.lang.Integer HOS_EXP,
+         java.lang.Integer SURGERY_N, java.lang.Integer DOCTER_FEE,
+         java.lang.Integer ER, java.lang.Integer OPD_PER_DAY_30_PER_YEAR)
    {
       this.policyId = policyId;
       this.policyName = policyName;
       this.effectiveDate = effectiveDate;
       this.expireDate = expireDate;
+      this.RBN_PER_DAY = RBN_PER_DAY;
+      this.HOS_EXP = HOS_EXP;
+      this.SURGERY_N = SURGERY_N;
+      this.DOCTER_FEE = DOCTER_FEE;
+      this.ER = ER;
+      this.OPD_PER_DAY_30_PER_YEAR = OPD_PER_DAY_30_PER_YEAR;
    }
 
 }
