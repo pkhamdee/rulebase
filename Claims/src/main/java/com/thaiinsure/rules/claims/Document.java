@@ -14,6 +14,9 @@ public class Document implements java.io.Serializable
    private java.util.Date createDate;
    private java.lang.String physicianName;
 
+   @org.kie.api.definition.type.Description(value = "e.g. generalPractitioner,  internish, otologist, dentist, cardiologist")
+   private java.lang.String physicianCategory;
+
    public Document()
    {
    }
@@ -48,12 +51,23 @@ public class Document implements java.io.Serializable
       this.physicianName = physicianName;
    }
 
+   public java.lang.String getPhysicianCategory()
+   {
+      return this.physicianCategory;
+   }
+
+   public void setPhysicianCategory(java.lang.String physicianCategory)
+   {
+      this.physicianCategory = physicianCategory;
+   }
+
    public Document(java.lang.String documentType, java.util.Date createDate,
-         java.lang.String physicianName)
+         java.lang.String physicianName, java.lang.String physicianCategory)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.physicianName = physicianName;
+      this.physicianCategory = physicianCategory;
    }
 
 }
