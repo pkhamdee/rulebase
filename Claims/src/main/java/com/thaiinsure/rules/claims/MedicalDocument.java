@@ -21,6 +21,8 @@ public class MedicalDocument implements java.io.Serializable
 
    private java.lang.String hospitalName;
 
+   private java.lang.String treatmentCategory;
+
    public MedicalDocument()
    {
    }
@@ -85,10 +87,20 @@ public class MedicalDocument implements java.io.Serializable
       this.hospitalName = hospitalName;
    }
 
+   public java.lang.String getTreatmentCategory()
+   {
+      return this.treatmentCategory;
+   }
+
+   public void setTreatmentCategory(java.lang.String treatmentCategory)
+   {
+      this.treatmentCategory = treatmentCategory;
+   }
+
    public MedicalDocument(java.lang.String documentType,
          java.util.Date createDate, java.lang.String physicianName,
          java.lang.String physicianCategory, java.lang.Integer medicalFee,
-         java.lang.String hospitalName)
+         java.lang.String hospitalName, java.lang.String treatmentCategory)
    {
       this.documentType = documentType;
       this.createDate = createDate;
@@ -96,6 +108,7 @@ public class MedicalDocument implements java.io.Serializable
       this.physicianCategory = physicianCategory;
       this.medicalFee = medicalFee;
       this.hospitalName = hospitalName;
+      this.treatmentCategory = treatmentCategory;
    }
 
 }
