@@ -12,7 +12,7 @@ public class Claim implements java.io.Serializable
    private java.lang.Integer claimAmount;
    private java.util.Date dateOfClaim;
 
-   private java.lang.Integer claimPaid;
+   private java.lang.Integer claimApproveAmount;
 
    public Claim()
    {
@@ -38,22 +38,22 @@ public class Claim implements java.io.Serializable
       this.dateOfClaim = dateOfClaim;
    }
 
-   public java.lang.Integer getClaimPaid()
+   public java.lang.Integer getClaimApproveAmount()
    {
-      return this.claimPaid;
+      return this.claimApproveAmount;
    }
 
-   public void setClaimPaid(java.lang.Integer claimPaid)
+   public void setClaimApproveAmount(java.lang.Integer claimApproveAmount)
    {
-      this.claimPaid = claimPaid;
+      this.claimApproveAmount = claimApproveAmount;
    }
 
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
-         java.lang.Integer claimPaid)
+         java.lang.Integer claimApproveAmount)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
-      this.claimPaid = claimPaid;
+      this.claimApproveAmount = claimApproveAmount;
    }
 
 }
