@@ -12,6 +12,8 @@ public class Claim implements java.io.Serializable
    private java.lang.Integer claimAmount;
    private java.util.Date dateOfClaim;
 
+   private java.lang.Integer claimPaid;
+
    public Claim()
    {
    }
@@ -36,10 +38,22 @@ public class Claim implements java.io.Serializable
       this.dateOfClaim = dateOfClaim;
    }
 
-   public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim)
+   public java.lang.Integer getClaimPaid()
+   {
+      return this.claimPaid;
+   }
+
+   public void setClaimPaid(java.lang.Integer claimPaid)
+   {
+      this.claimPaid = claimPaid;
+   }
+
+   public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
+         java.lang.Integer claimPaid)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
+      this.claimPaid = claimPaid;
    }
 
 }
