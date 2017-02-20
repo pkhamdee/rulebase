@@ -14,9 +14,10 @@ public class Claim implements java.io.Serializable
 
    private java.lang.Integer claimApproveAmount;
 
-   @org.kie.api.definition.type.Description(value = "e.g. approved, rejected")
+   @org.kie.api.definition.type.Description("e.g. approved, rejected")
    private java.lang.String claimStatus;
 
+   @org.kie.api.definition.type.Description("e.g. document required")
    private java.lang.String claimStatusReason;
 
    public Claim()
