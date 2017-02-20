@@ -9,7 +9,6 @@ public class Policy implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private java.lang.String policyId;
    private java.util.Date effectiveDate;
 
    private java.util.Date expireDate;
@@ -30,16 +29,6 @@ public class Policy implements java.io.Serializable
 
    public Policy()
    {
-   }
-
-   public java.lang.String getPolicyId()
-   {
-      return this.policyId;
-   }
-
-   public void setPolicyId(java.lang.String policyId)
-   {
-      this.policyId = policyId;
    }
 
    public java.util.Date getEffectiveDate()
@@ -132,13 +121,12 @@ public class Policy implements java.io.Serializable
       this.medicalPlan = medicalPlan;
    }
 
-   public Policy(java.lang.String policyId, java.util.Date effectiveDate,
-         java.util.Date expireDate, java.lang.Integer RBN_PER_DAY,
-         java.lang.Integer HOS_EXP, java.lang.Integer SURGERY_N,
-         java.lang.Integer DOCTER_FEE, java.lang.Integer ER,
-         java.lang.Integer OPD_PER_DAY_30_PER_YEAR, java.lang.String medicalPlan)
+   public Policy(java.util.Date effectiveDate, java.util.Date expireDate,
+         java.lang.Integer RBN_PER_DAY, java.lang.Integer HOS_EXP,
+         java.lang.Integer SURGERY_N, java.lang.Integer DOCTER_FEE,
+         java.lang.Integer ER, java.lang.Integer OPD_PER_DAY_30_PER_YEAR,
+         java.lang.String medicalPlan)
    {
-      this.policyId = policyId;
       this.effectiveDate = effectiveDate;
       this.expireDate = expireDate;
       this.RBN_PER_DAY = RBN_PER_DAY;
