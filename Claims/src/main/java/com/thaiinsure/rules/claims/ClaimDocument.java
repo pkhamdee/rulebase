@@ -12,13 +12,6 @@ public class ClaimDocument implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. prescription or bill")
    private java.lang.String documentType;
    private java.util.Date createDate;
-   private java.lang.String garageName;
-
-   private java.lang.Integer repairFee;
-
-   private java.lang.String customerId;
-
-   private java.lang.String repairType;
 
    public ClaimDocument()
    {
@@ -44,56 +37,10 @@ public class ClaimDocument implements java.io.Serializable
       this.createDate = createDate;
    }
 
-   public java.lang.String getGarageName()
-   {
-      return this.garageName;
-   }
-
-   public void setGarageName(java.lang.String garageName)
-   {
-      this.garageName = garageName;
-   }
-
-   public java.lang.Integer getRepairFee()
-   {
-      return this.repairFee;
-   }
-
-   public void setRepairFee(java.lang.Integer repairFee)
-   {
-      this.repairFee = repairFee;
-   }
-
-   public java.lang.String getCustomerId()
-   {
-      return this.customerId;
-   }
-
-   public void setCustomerId(java.lang.String customerId)
-   {
-      this.customerId = customerId;
-   }
-
-   public java.lang.String getRepairType()
-   {
-      return this.repairType;
-   }
-
-   public void setRepairType(java.lang.String repairType)
-   {
-      this.repairType = repairType;
-   }
-
-   public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
-         java.lang.String garageName, java.lang.Integer repairFee,
-         java.lang.String customerId, java.lang.String repairType)
+   public ClaimDocument(java.lang.String documentType, java.util.Date createDate)
    {
       this.documentType = documentType;
       this.createDate = createDate;
-      this.garageName = garageName;
-      this.repairFee = repairFee;
-      this.customerId = customerId;
-      this.repairType = repairType;
    }
 
 }
