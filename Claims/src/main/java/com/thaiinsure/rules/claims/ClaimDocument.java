@@ -19,9 +19,9 @@ public class ClaimDocument implements java.io.Serializable
 
    private java.lang.Integer medicalFee;
 
-   private java.lang.String hospitalName;
-
    private java.lang.String treatmentCategory;
+
+   private java.lang.String garageName;
 
    public ClaimDocument()
    {
@@ -77,16 +77,6 @@ public class ClaimDocument implements java.io.Serializable
       this.medicalFee = medicalFee;
    }
 
-   public java.lang.String getHospitalName()
-   {
-      return this.hospitalName;
-   }
-
-   public void setHospitalName(java.lang.String hospitalName)
-   {
-      this.hospitalName = hospitalName;
-   }
-
    public java.lang.String getTreatmentCategory()
    {
       return this.treatmentCategory;
@@ -97,18 +87,28 @@ public class ClaimDocument implements java.io.Serializable
       this.treatmentCategory = treatmentCategory;
    }
 
+   public java.lang.String getGarageName()
+   {
+      return this.garageName;
+   }
+
+   public void setGarageName(java.lang.String garageName)
+   {
+      this.garageName = garageName;
+   }
+
    public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
          java.lang.String physicianName, java.lang.String physicianCategory,
-         java.lang.Integer medicalFee, java.lang.String hospitalName,
-         java.lang.String treatmentCategory)
+         java.lang.Integer medicalFee, java.lang.String treatmentCategory,
+         java.lang.String garageName)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.physicianName = physicianName;
       this.physicianCategory = physicianCategory;
       this.medicalFee = medicalFee;
-      this.hospitalName = hospitalName;
       this.treatmentCategory = treatmentCategory;
+      this.garageName = garageName;
    }
 
 }
