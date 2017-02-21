@@ -19,8 +19,6 @@ public class CustomerPolicy implements java.io.Serializable
 
    private java.lang.String policyNumber;
 
-   private java.lang.String applicationId;
-
    private java.util.List<com.thaiinsure.rules.claims.Coverage> coverage;
 
    public CustomerPolicy()
@@ -78,16 +76,6 @@ public class CustomerPolicy implements java.io.Serializable
       this.policyNumber = policyNumber;
    }
 
-   public java.lang.String getApplicationId()
-   {
-      return this.applicationId;
-   }
-
-   public void setApplicationId(java.lang.String applicationId)
-   {
-      this.applicationId = applicationId;
-   }
-
    public java.util.List<com.thaiinsure.rules.claims.Coverage> getCoverage()
    {
       return this.coverage;
@@ -101,7 +89,7 @@ public class CustomerPolicy implements java.io.Serializable
 
    public CustomerPolicy(java.util.Date startDate, java.util.Date expiryDate,
          java.lang.String customerId, java.lang.String termConditionDescription,
-         java.lang.String policyNumber, java.lang.String applicationId,
+         java.lang.String policyNumber,
          java.util.List<com.thaiinsure.rules.claims.Coverage> coverage)
    {
       this.startDate = startDate;
@@ -109,7 +97,6 @@ public class CustomerPolicy implements java.io.Serializable
       this.customerId = customerId;
       this.termConditionDescription = termConditionDescription;
       this.policyNumber = policyNumber;
-      this.applicationId = applicationId;
       this.coverage = coverage;
    }
 
