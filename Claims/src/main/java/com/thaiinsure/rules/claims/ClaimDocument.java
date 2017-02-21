@@ -12,10 +12,6 @@ public class ClaimDocument implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. prescription or bill")
    private java.lang.String documentType;
    private java.util.Date createDate;
-   private java.lang.String physicianName;
-
-   private java.lang.String treatmentCategory;
-
    private java.lang.String garageName;
 
    private java.lang.Integer repairFee;
@@ -44,26 +40,6 @@ public class ClaimDocument implements java.io.Serializable
    public void setCreateDate(java.util.Date createDate)
    {
       this.createDate = createDate;
-   }
-
-   public java.lang.String getPhysicianName()
-   {
-      return this.physicianName;
-   }
-
-   public void setPhysicianName(java.lang.String physicianName)
-   {
-      this.physicianName = physicianName;
-   }
-
-   public java.lang.String getTreatmentCategory()
-   {
-      return this.treatmentCategory;
-   }
-
-   public void setTreatmentCategory(java.lang.String treatmentCategory)
-   {
-      this.treatmentCategory = treatmentCategory;
    }
 
    public java.lang.String getGarageName()
@@ -97,14 +73,11 @@ public class ClaimDocument implements java.io.Serializable
    }
 
    public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
-         java.lang.String physicianName, java.lang.String treatmentCategory,
          java.lang.String garageName, java.lang.Integer repairFee,
          java.lang.String repairCategory)
    {
       this.documentType = documentType;
       this.createDate = createDate;
-      this.physicianName = physicianName;
-      this.treatmentCategory = treatmentCategory;
       this.garageName = garageName;
       this.repairFee = repairFee;
       this.repairCategory = repairCategory;
