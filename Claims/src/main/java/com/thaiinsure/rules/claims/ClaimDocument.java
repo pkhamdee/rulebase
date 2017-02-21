@@ -18,6 +18,8 @@ public class ClaimDocument implements java.io.Serializable
 
    private java.lang.String repairCategory;
 
+   private java.lang.String customerId;
+
    public ClaimDocument()
    {
    }
@@ -72,15 +74,26 @@ public class ClaimDocument implements java.io.Serializable
       this.repairCategory = repairCategory;
    }
 
+   public java.lang.String getCustomerId()
+   {
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.String customerId)
+   {
+      this.customerId = customerId;
+   }
+
    public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
          java.lang.String garageName, java.lang.Integer repairFee,
-         java.lang.String repairCategory)
+         java.lang.String repairCategory, java.lang.String customerId)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.garageName = garageName;
       this.repairFee = repairFee;
       this.repairCategory = repairCategory;
+      this.customerId = customerId;
    }
 
 }
