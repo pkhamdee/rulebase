@@ -22,6 +22,8 @@ public class Claim implements java.io.Serializable
 
    private String claimId;
 
+   private java.lang.Integer claimPaidAmount;
+
    public Claim()
    {
    }
@@ -86,9 +88,20 @@ public class Claim implements java.io.Serializable
       this.claimId = claimId;
    }
 
+   public java.lang.Integer getClaimPaidAmount()
+   {
+      return this.claimPaidAmount;
+   }
+
+   public void setClaimPaidAmount(java.lang.Integer claimPaidAmount)
+   {
+      this.claimPaidAmount = claimPaidAmount;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
          java.lang.String claimStatus, java.lang.String customerId,
-         java.lang.String damageType, java.lang.String claimId)
+         java.lang.String damageType, java.lang.String claimId,
+         java.lang.Integer claimPaidAmount)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
@@ -96,6 +109,7 @@ public class Claim implements java.io.Serializable
       this.customerId = customerId;
       this.damageType = damageType;
       this.claimId = claimId;
+      this.claimPaidAmount = claimPaidAmount;
    }
 
 }
