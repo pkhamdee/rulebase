@@ -9,8 +9,6 @@ public class InsurancePolicy implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private java.lang.String agreementId;
-
    private java.util.Date startDate;
 
    private java.util.Date expiryDate;
@@ -25,16 +23,6 @@ public class InsurancePolicy implements java.io.Serializable
 
    public InsurancePolicy()
    {
-   }
-
-   public java.lang.String getAgreementId()
-   {
-      return this.agreementId;
-   }
-
-   public void setAgreementId(java.lang.String agreementId)
-   {
-      this.agreementId = agreementId;
    }
 
    public java.util.Date getStartDate()
@@ -98,12 +86,10 @@ public class InsurancePolicy implements java.io.Serializable
       this.applicationId = applicationId;
    }
 
-   public InsurancePolicy(java.lang.String agreementId, java.util.Date startDate,
-         java.util.Date expiryDate, java.lang.String customerId,
-         java.lang.String termConditionDescription,
+   public InsurancePolicy(java.util.Date startDate, java.util.Date expiryDate,
+         java.lang.String customerId, java.lang.String termConditionDescription,
          java.lang.String policyNumber, java.lang.String applicationId)
    {
-      this.agreementId = agreementId;
       this.startDate = startDate;
       this.expiryDate = expiryDate;
       this.customerId = customerId;
