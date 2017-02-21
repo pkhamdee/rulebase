@@ -9,8 +9,75 @@ public class Policy implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
+   private java.lang.String agreementId;
+   private java.lang.String applicationId;
+   private java.lang.String customerId;
+   private java.lang.String coverageId;
+   private java.lang.String companyName;
+
    public Policy()
    {
+   }
+
+   public java.lang.String getAgreementId()
+   {
+      return this.agreementId;
+   }
+
+   public void setAgreementId(java.lang.String agreementId)
+   {
+      this.agreementId = agreementId;
+   }
+
+   public java.lang.String getApplicationId()
+   {
+      return this.applicationId;
+   }
+
+   public void setApplicationId(java.lang.String applicationId)
+   {
+      this.applicationId = applicationId;
+   }
+
+   public java.lang.String getCustomerId()
+   {
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.String customerId)
+   {
+      this.customerId = customerId;
+   }
+
+   public java.lang.String getCoverageId()
+   {
+      return this.coverageId;
+   }
+
+   public void setCoverageId(java.lang.String coverageId)
+   {
+      this.coverageId = coverageId;
+   }
+
+   public java.lang.String getCompanyName()
+   {
+      return this.companyName;
+   }
+
+   public void setCompanyName(java.lang.String companyName)
+   {
+      this.companyName = companyName;
+   }
+
+   public Policy(java.lang.String agreementId, java.lang.String applicationId,
+         java.lang.String customerId, java.lang.String coverageId,
+         java.lang.String companyName)
+   {
+      this.agreementId = agreementId;
+      this.applicationId = applicationId;
+      this.customerId = customerId;
+      this.coverageId = coverageId;
+      this.companyName = companyName;
    }
 
 }
