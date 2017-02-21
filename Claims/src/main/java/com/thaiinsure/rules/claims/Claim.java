@@ -20,6 +20,9 @@ public class Claim implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. document required")
    private java.lang.String claimStatusReason;
 
+   @org.kie.api.definition.type.Description(value = "fk")
+   private java.lang.Integer customerId;
+
    public Claim()
    {
    }
@@ -74,15 +77,26 @@ public class Claim implements java.io.Serializable
       this.claimStatusReason = claimStatusReason;
    }
 
+   public java.lang.Integer getCustomerId()
+   {
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.Integer customerId)
+   {
+      this.customerId = customerId;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
          java.lang.Integer claimApproveAmount, java.lang.String claimStatus,
-         java.lang.String claimStatusReason)
+         java.lang.String claimStatusReason, java.lang.Integer customerId)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
       this.claimApproveAmount = claimApproveAmount;
       this.claimStatus = claimStatus;
       this.claimStatusReason = claimStatusReason;
+      this.customerId = customerId;
    }
 
 }
