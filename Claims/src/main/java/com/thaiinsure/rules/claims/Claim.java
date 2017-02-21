@@ -24,6 +24,8 @@ public class Claim implements java.io.Serializable
 
    private java.lang.Integer claimPaidAmount;
 
+   private java.lang.String garageName;
+
    public Claim()
    {
    }
@@ -98,10 +100,20 @@ public class Claim implements java.io.Serializable
       this.claimPaidAmount = claimPaidAmount;
    }
 
+   public java.lang.String getGarageName()
+   {
+      return this.garageName;
+   }
+
+   public void setGarageName(java.lang.String garageName)
+   {
+      this.garageName = garageName;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
          java.lang.String claimStatus, java.lang.String customerId,
          java.lang.String damageType, java.lang.String claimId,
-         java.lang.Integer claimPaidAmount)
+         java.lang.Integer claimPaidAmount, java.lang.String garageName)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
@@ -110,6 +122,7 @@ public class Claim implements java.io.Serializable
       this.damageType = damageType;
       this.claimId = claimId;
       this.claimPaidAmount = claimPaidAmount;
+      this.garageName = garageName;
    }
 
 }
