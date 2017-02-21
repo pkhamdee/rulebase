@@ -17,11 +17,11 @@ public class ClaimDocument implements java.io.Serializable
    @org.kie.api.definition.type.Description("e.g. generalPractitioner,  internish, otologist, dentist, cardiologist")
    private java.lang.String physicianCategory;
 
-   private java.lang.Integer medicalFee;
-
    private java.lang.String treatmentCategory;
 
    private java.lang.String garageName;
+
+   private java.lang.Integer repairFee;
 
    public ClaimDocument()
    {
@@ -67,16 +67,6 @@ public class ClaimDocument implements java.io.Serializable
       this.physicianCategory = physicianCategory;
    }
 
-   public java.lang.Integer getMedicalFee()
-   {
-      return this.medicalFee;
-   }
-
-   public void setMedicalFee(java.lang.Integer medicalFee)
-   {
-      this.medicalFee = medicalFee;
-   }
-
    public java.lang.String getTreatmentCategory()
    {
       return this.treatmentCategory;
@@ -97,18 +87,28 @@ public class ClaimDocument implements java.io.Serializable
       this.garageName = garageName;
    }
 
+   public java.lang.Integer getRepairFee()
+   {
+      return this.repairFee;
+   }
+
+   public void setRepairFee(java.lang.Integer repairFee)
+   {
+      this.repairFee = repairFee;
+   }
+
    public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
          java.lang.String physicianName, java.lang.String physicianCategory,
-         java.lang.Integer medicalFee, java.lang.String treatmentCategory,
-         java.lang.String garageName)
+         java.lang.String treatmentCategory, java.lang.String garageName,
+         java.lang.Integer repairFee)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.physicianName = physicianName;
       this.physicianCategory = physicianCategory;
-      this.medicalFee = medicalFee;
       this.treatmentCategory = treatmentCategory;
       this.garageName = garageName;
+      this.repairFee = repairFee;
    }
 
 }
