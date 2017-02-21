@@ -22,10 +22,6 @@ public class Claim implements java.io.Serializable
 
    private String claimId;
 
-   private String incidentId;
-
-   private java.lang.String agreementId;
-
    public Claim()
    {
    }
@@ -80,26 +76,6 @@ public class Claim implements java.io.Serializable
       this.customerId = customerId;
    }
 
-   public java.lang.String getAgreementId()
-   {
-      return this.agreementId;
-   }
-
-   public void setAgreementId(java.lang.String agreementId)
-   {
-      this.agreementId = agreementId;
-   }
-
-   public java.lang.String getIncidentId()
-   {
-      return this.incidentId;
-   }
-
-   public void setIncidentId(java.lang.String incidentId)
-   {
-      this.incidentId = incidentId;
-   }
-
    public java.lang.String getClaimId()
    {
       return this.claimId;
@@ -112,8 +88,7 @@ public class Claim implements java.io.Serializable
 
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
          java.lang.String claimStatus, java.lang.String customerId,
-         java.lang.String damageType, java.lang.String claimId,
-         java.lang.String incidentId, java.lang.String agreementId)
+         java.lang.String damageType, java.lang.String claimId)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
@@ -121,8 +96,6 @@ public class Claim implements java.io.Serializable
       this.customerId = customerId;
       this.damageType = damageType;
       this.claimId = claimId;
-      this.incidentId = incidentId;
-      this.agreementId = agreementId;
    }
 
 }
