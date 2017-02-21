@@ -21,6 +21,8 @@ public class InsurancePolicy implements java.io.Serializable
 
    private java.lang.String policyNumber;
 
+   private java.lang.String applicationId;
+
    public InsurancePolicy()
    {
    }
@@ -86,9 +88,20 @@ public class InsurancePolicy implements java.io.Serializable
       this.policyNumber = policyNumber;
    }
 
+   public java.lang.String getApplicationId()
+   {
+      return this.applicationId;
+   }
+
+   public void setApplicationId(java.lang.String applicationId)
+   {
+      this.applicationId = applicationId;
+   }
+
    public InsurancePolicy(java.lang.String agreementId, java.util.Date startDate,
          java.util.Date expiryDate, java.lang.String customerId,
-         java.lang.String termConditionDescription, java.lang.String policyNumber)
+         java.lang.String termConditionDescription,
+         java.lang.String policyNumber, java.lang.String applicationId)
    {
       this.agreementId = agreementId;
       this.startDate = startDate;
@@ -96,6 +109,7 @@ public class InsurancePolicy implements java.io.Serializable
       this.customerId = customerId;
       this.termConditionDescription = termConditionDescription;
       this.policyNumber = policyNumber;
+      this.applicationId = applicationId;
    }
 
 }
