@@ -12,16 +12,17 @@ public class Claim implements java.io.Serializable
    private java.lang.Integer claimAmount;
    private java.util.Date dateOfClaim;
 
-   private java.lang.Integer claimApproveAmount;
-
    @org.kie.api.definition.type.Description("e.g. approved, rejected")
    private java.lang.String claimStatus;
 
-   @org.kie.api.definition.type.Description("e.g. document required")
-   private java.lang.String claimStatusReason;
-
-   @org.kie.api.definition.type.Description(value = "fk")
+   @org.kie.api.definition.type.Description("fk")
    private java.lang.Integer customerId;
+
+   private java.lang.String damageType;
+
+   private java.lang.Integer claimId;
+
+   private java.lang.Integer incidentId;
 
    public Claim()
    {
@@ -47,16 +48,6 @@ public class Claim implements java.io.Serializable
       this.dateOfClaim = dateOfClaim;
    }
 
-   public java.lang.Integer getClaimApproveAmount()
-   {
-      return this.claimApproveAmount;
-   }
-
-   public void setClaimApproveAmount(java.lang.Integer claimApproveAmount)
-   {
-      this.claimApproveAmount = claimApproveAmount;
-   }
-
    public java.lang.String getClaimStatus()
    {
       return this.claimStatus;
@@ -65,16 +56,6 @@ public class Claim implements java.io.Serializable
    public void setClaimStatus(java.lang.String claimStatus)
    {
       this.claimStatus = claimStatus;
-   }
-
-   public java.lang.String getClaimStatusReason()
-   {
-      return this.claimStatusReason;
-   }
-
-   public void setClaimStatusReason(java.lang.String claimStatusReason)
-   {
-      this.claimStatusReason = claimStatusReason;
    }
 
    public java.lang.Integer getCustomerId()
@@ -87,16 +68,48 @@ public class Claim implements java.io.Serializable
       this.customerId = customerId;
    }
 
+   public java.lang.String getDamageType()
+   {
+      return this.damageType;
+   }
+
+   public void setDamageType(java.lang.String damageType)
+   {
+      this.damageType = damageType;
+   }
+
+   public java.lang.Integer getClaimId()
+   {
+      return this.claimId;
+   }
+
+   public void setClaimId(java.lang.Integer claimId)
+   {
+      this.claimId = claimId;
+   }
+
+   public java.lang.Integer getIncidentId()
+   {
+      return this.incidentId;
+   }
+
+   public void setIncidentId(java.lang.Integer incidentId)
+   {
+      this.incidentId = incidentId;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
-         java.lang.Integer claimApproveAmount, java.lang.String claimStatus,
-         java.lang.String claimStatusReason, java.lang.Integer customerId)
+         java.lang.String claimStatus, java.lang.Integer customerId,
+         java.lang.String damageType, java.lang.Integer claimId,
+         java.lang.Integer incidentId)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
-      this.claimApproveAmount = claimApproveAmount;
       this.claimStatus = claimStatus;
-      this.claimStatusReason = claimStatusReason;
       this.customerId = customerId;
+      this.damageType = damageType;
+      this.claimId = claimId;
+      this.incidentId = incidentId;
    }
 
 }
