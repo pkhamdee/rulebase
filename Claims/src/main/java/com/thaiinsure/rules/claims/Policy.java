@@ -11,6 +11,16 @@ public class Policy implements java.io.Serializable
 
    private java.lang.String agreementId;
 
+   private java.util.Date startDate;
+
+   private java.util.Date expiryDate;
+
+   private java.lang.String customerId;
+
+   private java.lang.String termConditionDescription;
+
+   private java.lang.String policyNumber;
+
    public Policy()
    {
    }
@@ -25,9 +35,67 @@ public class Policy implements java.io.Serializable
       this.agreementId = agreementId;
    }
 
-   public Policy(java.lang.String agreementId)
+   public java.util.Date getStartDate()
+   {
+      return this.startDate;
+   }
+
+   public void setStartDate(java.util.Date startDate)
+   {
+      this.startDate = startDate;
+   }
+
+   public java.util.Date getExpiryDate()
+   {
+      return this.expiryDate;
+   }
+
+   public void setExpiryDate(java.util.Date expiryDate)
+   {
+      this.expiryDate = expiryDate;
+   }
+
+   public java.lang.String getCustomerId()
+   {
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.String customerId)
+   {
+      this.customerId = customerId;
+   }
+
+   public java.lang.String getTermConditionDescription()
+   {
+      return this.termConditionDescription;
+   }
+
+   public void setTermConditionDescription(
+         java.lang.String termConditionDescription)
+   {
+      this.termConditionDescription = termConditionDescription;
+   }
+
+   public java.lang.String getPolicyNumber()
+   {
+      return this.policyNumber;
+   }
+
+   public void setPolicyNumber(java.lang.String policyNumber)
+   {
+      this.policyNumber = policyNumber;
+   }
+
+   public Policy(java.lang.String agreementId, java.util.Date startDate,
+         java.util.Date expiryDate, java.lang.String customerId,
+         java.lang.String termConditionDescription, java.lang.String policyNumber)
    {
       this.agreementId = agreementId;
+      this.startDate = startDate;
+      this.expiryDate = expiryDate;
+      this.customerId = customerId;
+      this.termConditionDescription = termConditionDescription;
+      this.policyNumber = policyNumber;
    }
 
 }
