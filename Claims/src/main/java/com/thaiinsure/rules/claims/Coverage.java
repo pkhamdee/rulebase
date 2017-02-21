@@ -13,7 +13,6 @@ public class Coverage implements java.io.Serializable
    private java.lang.Integer coverageAmount;
    private java.lang.String coverageType;
    private java.lang.String coverageLevel;
-   private java.lang.String productId;
    private java.lang.String coverageDescription;
    private java.lang.String coverageTerms;
 
@@ -61,16 +60,6 @@ public class Coverage implements java.io.Serializable
       this.coverageLevel = coverageLevel;
    }
 
-   public java.lang.String getProductId()
-   {
-      return this.productId;
-   }
-
-   public void setProductId(java.lang.String productId)
-   {
-      this.productId = productId;
-   }
-
    public java.lang.String getCoverageDescription()
    {
       return this.coverageDescription;
@@ -91,16 +80,14 @@ public class Coverage implements java.io.Serializable
       this.coverageTerms = coverageTerms;
    }
 
-   public Coverage(java.lang.String coverageId,
-         java.lang.Integer coverageAmount, java.lang.String coverageType,
-         java.lang.String coverageLevel, java.lang.String productId,
+   public Coverage(java.lang.String coverageId, java.lang.Integer coverageAmount,
+         java.lang.String coverageType, java.lang.String coverageLevel,
          java.lang.String coverageDescription, java.lang.String coverageTerms)
    {
       this.coverageId = coverageId;
       this.coverageAmount = coverageAmount;
       this.coverageType = coverageType;
       this.coverageLevel = coverageLevel;
-      this.productId = productId;
       this.coverageDescription = coverageDescription;
       this.coverageTerms = coverageTerms;
    }
