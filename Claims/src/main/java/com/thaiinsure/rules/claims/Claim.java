@@ -16,13 +16,15 @@ public class Claim implements java.io.Serializable
    private java.lang.String claimStatus;
 
    @org.kie.api.definition.type.Description("fk")
-   private java.lang.Integer customerId;
+   private String customerId;
 
    private java.lang.String damageType;
 
    private java.lang.Integer claimId;
 
    private java.lang.Integer incidentId;
+
+   private java.lang.String agreementId;
 
    public Claim()
    {
@@ -58,16 +60,6 @@ public class Claim implements java.io.Serializable
       this.claimStatus = claimStatus;
    }
 
-   public java.lang.Integer getCustomerId()
-   {
-      return this.customerId;
-   }
-
-   public void setCustomerId(java.lang.Integer customerId)
-   {
-      this.customerId = customerId;
-   }
-
    public java.lang.String getDamageType()
    {
       return this.damageType;
@@ -98,10 +90,30 @@ public class Claim implements java.io.Serializable
       this.incidentId = incidentId;
    }
 
+   public java.lang.String getCustomerId()
+   {
+      return this.customerId;
+   }
+
+   public void setCustomerId(java.lang.String customerId)
+   {
+      this.customerId = customerId;
+   }
+
+   public java.lang.String getAgreementId()
+   {
+      return this.agreementId;
+   }
+
+   public void setAgreementId(java.lang.String agreementId)
+   {
+      this.agreementId = agreementId;
+   }
+
    public Claim(java.lang.Integer claimAmount, java.util.Date dateOfClaim,
-         java.lang.String claimStatus, java.lang.Integer customerId,
+         java.lang.String claimStatus, java.lang.String customerId,
          java.lang.String damageType, java.lang.Integer claimId,
-         java.lang.Integer incidentId)
+         java.lang.Integer incidentId, java.lang.String agreementId)
    {
       this.claimAmount = claimAmount;
       this.dateOfClaim = dateOfClaim;
@@ -110,6 +122,7 @@ public class Claim implements java.io.Serializable
       this.damageType = damageType;
       this.claimId = claimId;
       this.incidentId = incidentId;
+      this.agreementId = agreementId;
    }
 
 }
