@@ -14,14 +14,13 @@ public class ClaimDocument implements java.io.Serializable
    private java.util.Date createDate;
    private java.lang.String physicianName;
 
-   @org.kie.api.definition.type.Description("e.g. generalPractitioner,  internish, otologist, dentist, cardiologist")
-   private java.lang.String physicianCategory;
-
    private java.lang.String treatmentCategory;
 
    private java.lang.String garageName;
 
    private java.lang.Integer repairFee;
+
+   private java.lang.String repairCategory;
 
    public ClaimDocument()
    {
@@ -57,16 +56,6 @@ public class ClaimDocument implements java.io.Serializable
       this.physicianName = physicianName;
    }
 
-   public java.lang.String getPhysicianCategory()
-   {
-      return this.physicianCategory;
-   }
-
-   public void setPhysicianCategory(java.lang.String physicianCategory)
-   {
-      this.physicianCategory = physicianCategory;
-   }
-
    public java.lang.String getTreatmentCategory()
    {
       return this.treatmentCategory;
@@ -97,18 +86,28 @@ public class ClaimDocument implements java.io.Serializable
       this.repairFee = repairFee;
    }
 
+   public java.lang.String getRepairCategory()
+   {
+      return this.repairCategory;
+   }
+
+   public void setRepairCategory(java.lang.String repairCategory)
+   {
+      this.repairCategory = repairCategory;
+   }
+
    public ClaimDocument(java.lang.String documentType, java.util.Date createDate,
-         java.lang.String physicianName, java.lang.String physicianCategory,
-         java.lang.String treatmentCategory, java.lang.String garageName,
-         java.lang.Integer repairFee)
+         java.lang.String physicianName, java.lang.String treatmentCategory,
+         java.lang.String garageName, java.lang.Integer repairFee,
+         java.lang.String repairCategory)
    {
       this.documentType = documentType;
       this.createDate = createDate;
       this.physicianName = physicianName;
-      this.physicianCategory = physicianCategory;
       this.treatmentCategory = treatmentCategory;
       this.garageName = garageName;
       this.repairFee = repairFee;
+      this.repairCategory = repairCategory;
    }
 
 }
